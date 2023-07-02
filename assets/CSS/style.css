@@ -152,6 +152,7 @@ body {
     transition: 0.4s;
     cursor: pointer;
     margin-top: 40px;
+    border:  1px solid #E6BF4D;
 }
 .hero_text span:hover {
     background-color: transparent;
@@ -190,12 +191,14 @@ body {
     font-size: 25px;
 }
 .schiler_text {
-    width: 70%;
+    width: 75%;
 }
 .schiler_tex span {
     color: white;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: 'Jost', sans-serif;
 }
 .schiler_tex {
     width:100%;
@@ -206,9 +209,64 @@ body {
     padding-left: 40px;
 }
 .text_sc {
-    width: 700px;
+    width: 680px;
     padding-left: 130px;
 }
 .image_sc img {
     width: 100%;
 }
+.cakes_section {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.cake_img img {
+    width: 100%;
+    z-index: -1;
+}
+.cake1 {
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cake_img {
+    width: 95%;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+}
+.cake_overlay {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    background-color: #E6BF4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    bottom: -100%;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.cake_img:hover .cake_overlay {
+    opacity: 1;
+    bottom: 0;
+}
+.cake_overlay p {
+    color: black;
+}
+.cake_text p:first-of-type {
+    color: white;
+    font-size: 23px;
+    padding-top: 20px;
+}
+.cake_text p:last-of-type {
+    color: #E6BF4D;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
